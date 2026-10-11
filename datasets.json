@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "generated": "2026-10-11",
+    "portails": {
+      "tco": "https://data.tco.re",
+      "region": "https://data.regionreunion.com"
+    },
+    "api_endpoint": "/api/explore/v2.1/catalog/datasets/{id}/records",
+    "total_datasets": 367
+  },
+  "modules": {
+
+    "dechets": {
+      "label": "Déchets & propreté",
+      "icon": "🗑️",
+      "datasets": [
+        { "id": "meteo-des-decheteries", "portal": "tco", "live": true, "priority": 1 },
+        { "id": "dysfonctionnement-collecte-territoire-de-l-ouest-2023-2024", "portal": "tco", "priority": 1 },
+        { "id": "jours-de-collectes-du-territoire-de-l-ouest-gru", "portal": "tco", "priority": 1 },
+        { "id": "calendriers-de-collectes-du-territoire-de-louest-gru", "portal": "tco", "priority": 1 },
+        { "id": "les-decheteries-du-tco-mai-2023", "portal": "tco", "priority": 1 },
+        { "id": "geolocalisation-des-bornes-a-apport-volontaire-du-tco", "portal": "tco", "priority": 1 },
+        { "id": "nombre-de-corbeille-de-proprete-urbaine-par-commune", "portal": "tco", "priority": 2 },
+        { "id": "collecte_territoire_de_l_ouest_collecte_2024", "portal": "tco", "priority": 1 },
+        { "id": "tonnage-dechets-menagers-et-assimiles-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "sinoer-collecte-dechets-menagers-et-assimiles-2015public", "portal": "region", "priority": 3 },
+        { "id": "sinoer-annuaire-des-installations-de-stockage-des-dechets-non-dangereux-isdndpub", "portal": "region", "priority": 3 },
+        { "id": "emplacement-dechetteries-villesaintdenis", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "eau": {
+      "label": "Eau & assainissement",
+      "icon": "💧",
+      "datasets": [
+        { "id": "usines-de-traitement-des-eaux-du-territoire-de-la-cote-ouest", "portal": "tco", "priority": 1 },
+        { "id": "les-stations-des-eaux-usees-du-territoire-de-la-cote-ouest", "portal": "tco", "priority": 1 },
+        { "id": "les-points-d-activite-ou-d-interet-la-gestion-des-eaux", "portal": "region", "priority": 2 },
+        { "id": "cours_d_eau_reu-mif", "portal": "tco", "priority": 2 }
+      ]
+    },
+
+    "gemapi": {
+      "label": "GEMAPI — milieux aquatiques & inondations",
+      "icon": "🌊",
+      "datasets": [
+        { "id": "gemapi_ouvrages_tco", "portal": "tco", "priority": 1 },
+        { "id": "cours_d_eau_reu-mif", "portal": "tco", "priority": 2 },
+        { "id": "rrn_graphe_arc", "portal": "region", "priority": 3 }
+      ]
+    },
+
+    "transport": {
+      "label": "Transport & mobilité",
+      "icon": "🚌",
+      "datasets": [
+        { "id": "ligne-et-arret-bus-urbain-semto", "portal": "tco", "priority": 1 },
+        { "id": "gtfs-ko-0809", "portal": "tco", "priority": 1 },
+        { "id": "base-nationale-des-lieux-de-covoiturage-tco", "portal": "tco", "priority": 2 },
+        { "id": "voie-velo-du-tco", "portal": "tco", "priority": 2 },
+        { "id": "donnees-gtfs-lareunion", "portal": "region", "priority": 2 },
+        { "id": "gtfs-routes-cars-jaunes-lareunion", "portal": "region", "priority": 2 },
+        { "id": "gtfs-stops-cars-jaunes-lareunion", "portal": "region", "priority": 2 },
+        { "id": "cars-jaunes-gtfs-rt", "portal": "region", "live": true, "priority": 1 },
+        { "id": "voie-velo-regionale", "portal": "region", "priority": 3 },
+        { "id": "accroches-velo-civis", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "voirie": {
+      "label": "Voirie & sécurité routière",
+      "icon": "🚗",
+      "datasets": [
+        { "id": "accidents-corporels-de-la-circulation-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere", "portal": "region", "priority": 2 },
+        { "id": "trafic-mja-rn-lareunion", "portal": "region", "priority": 1 },
+        { "id": "debit-journalier-rn-crlaeunion", "portal": "region", "priority": 2 },
+        { "id": "rn-classement-fonctionnel-lareunion", "portal": "region", "priority": 2 },
+        { "id": "limitations-vitesse-rn-lareunion", "portal": "region", "priority": 3 },
+        { "id": "ponts-rn-lareunion", "portal": "region", "priority": 2 },
+        { "id": "tunnels-rn-lareunion", "portal": "region", "priority": 2 },
+        { "id": "passages-pietons-rn-lareunion", "portal": "region", "priority": 3 },
+        { "id": "rn-statut-administratif-lareunion", "portal": "region", "priority": 3 },
+        { "id": "rn-agglomeration-lareunion", "portal": "region", "priority": 3 },
+        { "id": "rn-commune-lareunion", "portal": "region", "priority": 3 },
+        { "id": "pr-rn-lareunion", "portal": "region", "priority": 3 }
+      ]
+    },
+
+    "habitat": {
+      "label": "Habitat & urbanisme",
+      "icon": "🏘️",
+      "datasets": [
+        { "id": "demande-de-valeurs-foncieres-geolocalisee-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "quartiers-prioritaires-de-la-politique-de-la-ville-qpv-ca-territoire-de-la-cote-", "portal": "tco", "priority": 1 },
+        { "id": "iris-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 2 },
+        { "id": "communes-du-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 3 },
+        { "id": "quartier-secteur-tco", "portal": "tco", "priority": 2 },
+        { "id": "referentiel_adresse_tco", "portal": "tco", "priority": 3 },
+        { "id": "bano-974", "portal": "tco", "priority": 3 },
+        { "id": "demande-de-valeurs-foncierespublic", "portal": "tco", "priority": 3 },
+        { "id": "liste-des-permis-de-construire-et-autres-autorisations-d-urbanisme-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "liste-des-permis-de-constuire-creant-des-locaux-non-residentiels-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "potentiel-foncier", "portal": "region", "priority": 2 },
+        { "id": "logements-et-logements-sociaux-dans-les-departements-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "financement-et-cout-des-logements-sociaux-construits-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "financement-et-cout-des-logements-sociaux-rehabilites-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "couts-et-surfaces-moyens-des-logements-sociaux-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "logements-en-2015-maille-irispublic", "portal": "region", "priority": 3 },
+        { "id": "quartiers-prioritaires-de-la-politique-de-la-ville-qpv", "portal": "region", "priority": 3 },
+        { "id": "limite-grand-quartier-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "communes-classees-en-zones-de-revitalisation-rurale-zrr-2017", "portal": "region", "priority": 4 },
+        { "id": "bal-la-possession", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "economie": {
+      "label": "Économie & emploi",
+      "icon": "🏗️",
+      "datasets": [
+        { "id": "sirene-v3-consolidee-ca-territoire-de-la-cote-ouest", "portal": "tco", "priority": 1 },
+        { "id": "nombre-d-etablissements-employeurs-et-effectifs-salaries-du-secteur-prive-par-co", "portal": "tco", "priority": 1 },
+        { "id": "code-ape-et-filiere", "portal": "tco", "priority": 2 },
+        { "id": "structure-de-la-population-active-sur-le-territoire-de-la-cote-ouest-par-csp-et-", "portal": "tco", "priority": 2 },
+        { "id": "population-active-de-15-ans-ou-plus-ayant-un-emploi-par-sexe-lieu-de-travail-et-", "portal": "tco", "priority": 2 },
+        { "id": "liste-des-territoires-d-industrie-et-des-communes-concernees-au-tco", "portal": "tco", "priority": 3 },
+        { "id": "base-sirene-v3-lareunion", "portal": "region", "priority": 2 },
+        { "id": "demandeurs-d-emploi-inscrits-a-pole-emploi-par-commune-a-la-reunion", "portal": "region", "priority": 1 },
+        { "id": "demandeurs-d-emploi-inscrits-a-pole-emploi-par-age-et-sexe-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "demandeurs-d-emploi-inscrits-en-fin-de-mois-a-pole-emploi-par-age-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "demandeurs-d-emploi-inscrits-en-fin-de-mois-a-pole-emploi-par-categorie-la-reuni", "portal": "region", "priority": 2 },
+        { "id": "demandeurs-d-emploi-inscrits-en-fin-de-mois-a-pole-emploi-par-sexe-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "emplois-salaries-nace38-industries-acoss-lareunion", "portal": "region", "priority": 2 },
+        { "id": "effectifs-salaries-et-masse-salariale-du-secteur-prive-par-region-x-secteur-na28", "portal": "region", "priority": 2 },
+        { "id": "masse-salariale-et-assiette-chomage-partiel-mensuelles-du-secteur-prive-a-la-reu", "portal": "region", "priority": 3 },
+        { "id": "auto-entrepreneurs-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "taux-d-impayes-mensuels-entreprises-de-10-salaries-ou-plus-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "zone-daide-a-finalite-regionale-afr", "portal": "region", "priority": 3 },
+        { "id": "poles-attractivite-industrielle-commerciale-lareunion", "portal": "region", "priority": 2 },
+        { "id": "liste-des-entreprises-rge-2", "portal": "region", "priority": 4 },
+        { "id": "liste-des-territoires-d-industrie-et-des-communes-concernees-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "structure-de-la-population-active-reunion-par-csp-et-activite-par-commune", "portal": "region", "priority": 2 },
+        { "id": "fichier-des-locaux-des-personnes-morales-majic-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "taux-d-emploi-de-travailleurs-handicapes-dans-la-fonction-publique-a-la-reunion", "portal": "region", "priority": 4 },
+        { "id": "salaries-des-particuliers-employeurs-en-2018", "portal": "region", "priority": 4 },
+        { "id": "espace-de-coworkings-sur-l-ile-de-la-reunion", "portal": "region", "priority": 3 }
+      ]
+    },
+
+    "finances": {
+      "label": "Finances & budget",
+      "icon": "💰",
+      "datasets": [
+        { "id": "rei-fiscalite-directe-locale-2020-2021-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "complements-fiscalite-directe-locale-2021-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "montants-et-criteres-des-dotations-des-communes-ca-territoire-de-la-cote-ouest-t", "portal": "tco", "priority": 1 },
+        { "id": "montants-et-criteres-des-dotations-des-groupements-a-fiscalite-propre-ca-territo", "portal": "tco", "priority": 1 },
+        { "id": "comptes-2014-2021-des-communes-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 2 },
+        { "id": "comptes-consolides-des-communes-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 2 },
+        { "id": "comptes-consolides-du-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "comptes-des-groupements-a-fiscalite-propre-territoire-de-la-cote-ouest", "portal": "tco", "priority": 2 },
+        { "id": "investissement-public-local-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 2 },
+        { "id": "budget-primitif-mairie-de-la-possession", "portal": "tco", "priority": 4 },
+        { "id": "budget-supplementaire-2021-de-la-ville-de-la-possession", "portal": "tco", "priority": 4 },
+        { "id": "decision-modificative-2021-mairie-de-la-possession", "portal": "tco", "priority": 4 },
+        { "id": "comptes-consolides-a-la-reunion-2012-2021", "portal": "region", "priority": 2 },
+        { "id": "fonds-europeens-structurels-opendatace-lareunion", "portal": "region", "priority": 2 },
+        { "id": "donnees-essentielles-de-la-commande-publique-donnees-enrichies", "portal": "region", "priority": 3 },
+        { "id": "donnees-essentielles-marches-publics-tco-lareunion", "portal": "tco", "priority": 1 },
+        { "id": "donnees-essentielles-marches-publics-mairie-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "boamp", "portal": "region", "priority": 3 },
+        { "id": "subventions-attribuees-aux-associations-en-2022", "portal": "region", "priority": 4 },
+        { "id": "subventions-attribuees-aux-associations-en-2023", "portal": "region", "priority": 4 },
+        { "id": "subventions-attribuees-aux-associations-en-2024", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "environnement": {
+      "label": "Environnement & énergie",
+      "icon": "🌿",
+      "datasets": [
+        { "id": "consommation-edf-annuelle-par-commune-du-tco0", "portal": "tco", "priority": 1 },
+        { "id": "reserves_naturelles_nationales", "portal": "tco", "priority": 2 },
+        { "id": "zones-naturelles-d-interet-ecologique-faunistique-et-floristique-sur-le-territoi", "portal": "tco", "priority": 2 },
+        { "id": "les-plages-du-territoire-de-la-cote-ouest", "portal": "tco", "priority": 2 },
+        { "id": "sites-mobiles-5g-sur-le-territoire-de-la-cote-ouest", "portal": "tco", "priority": 3 },
+        { "id": "developpement-et-lineaire-du-reseau-electrique-la-reunion-edf", "portal": "region", "priority": 1 },
+        { "id": "lignes-haute-tension-hta-aerien", "portal": "region", "priority": 2 },
+        { "id": "donnees-locales-de-consommation-de-produits-petroliers-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "world-air-quality-openaq", "portal": "region", "priority": 1 },
+        { "id": "zones-naturelles-d-interet-ecologique-faunistique-et-floristique-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "pnrun_unesco_perimetre", "portal": "region", "priority": 3 },
+        { "id": "pnrun_2021", "portal": "region", "priority": 3 },
+        { "id": "pnrun_charte_vocations_coeur", "portal": "region", "priority": 4 },
+        { "id": "pnrun_charte_vocations_aa", "portal": "region", "priority": 4 },
+        { "id": "donnees-synop-essentielles-ommpublic", "portal": "region", "priority": 2 },
+        { "id": "observation-meteorologique-historiques-france-synop", "portal": "region", "priority": 3 }
+      ]
+    },
+
+    "social": {
+      "label": "Social & santé",
+      "icon": "🏥",
+      "datasets": [
+        { "id": "etablissements-du-domaine-sanitaire-et-social-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "bulletin-sanitaire-du-territoire-de-l-ouest", "portal": "tco", "priority": 1 },
+        { "id": "60-ans-et-plus-indicateurs-au-niveau-de-la-commune-ca-territoire-de-la-cote-oues", "portal": "tco", "priority": 2 },
+        { "id": "base-naissance-tco", "portal": "tco", "priority": 2 },
+        { "id": "etablissements-du-domaine-sanitaire-et-social-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "historique-des-etablissements-du-domaine-sanitaire-et-social-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "annuaire-sante-liste-localisation-et-tarifs-des-professionnels-de-sante-copie", "portal": "region", "priority": 2 },
+        { "id": "annuaire-des-professionnels-de-santepublic", "portal": "region", "priority": 3 },
+        { "id": "effectif-de-patients-par-pathologie-sexe-classe-d-age-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "beneficiaires-presta-sociales-caf-lareunion", "portal": "region", "priority": 1 },
+        { "id": "montant-presta-sociales-caf-lareunion", "portal": "region", "priority": 2 },
+        { "id": "donnees-covid19-lareunion", "portal": "region", "priority": 4 },
+        { "id": "donnees-hospitalieres-covid19-lareunion", "portal": "region", "priority": 4 },
+        { "id": "revenus-declares-pauvrete-et-niveau-de-vie-en-2015-irispublic", "portal": "region", "priority": 2 },
+        { "id": "professionnels-de-sante-a-la-possession", "portal": "region", "priority": 4 },
+        { "id": "etablissements-d-accueil-des-jeunes-enfants-de-la-possession", "portal": "region", "priority": 3 },
+        { "id": "etablissements-accueil-jeunes-enfants-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "enquete-microtic2d-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "liste-des-structures-de-la-justice-en-france", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "culture": {
+      "label": "Culture, sport & tourisme",
+      "icon": "🎭",
+      "datasets": [
+        { "id": "base-des-lieux-et-equipements-culturels-basilic-ca-territoire-de-la-cote-ouest-t", "portal": "tco", "priority": 1 },
+        { "id": "poles-attractivite-culture-loisirs-tco", "portal": "tco", "priority": 1 },
+        { "id": "ecoles-labellisees-30-minutes-d-activite-physique-quotidienne-30-apq-ca-territoi", "portal": "tco", "priority": 2 },
+        { "id": "hebergements-collectifs-classes-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "liste-des-musees-de-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "liste-des-festivals-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "frequentation-des-musees-de-france", "portal": "region", "priority": 3 },
+        { "id": "frequentation-des-musees-de-franceculture", "portal": "region", "priority": 3 },
+        { "id": "panorama-des-festivalsculture", "portal": "region", "priority": 3 },
+        { "id": "base-joconde-extraitculture", "portal": "region", "priority": 4 },
+        { "id": "nombre-d-etablissements-culturels-actifs-par-region", "portal": "region", "priority": 3 },
+        { "id": "poles-attractivite-culture-loisirs-lareunion", "portal": "region", "priority": 2 },
+        { "id": "equipements-sportifs", "portal": "region", "priority": 2 },
+        { "id": "data-bassin-de-natation", "portal": "region", "priority": 3 },
+        { "id": "bibliotheques-publiques", "portal": "region", "priority": 3 },
+        { "id": "sentiers-marmailles-lareunion", "portal": "region", "priority": 2 },
+        { "id": "sentier-littoral-est-lareunion", "portal": "region", "priority": 3 },
+        { "id": "circuits-rendonnees-lareunion-wssoubik", "portal": "region", "priority": 2 },
+        { "id": "bdcanyons-lareunion", "portal": "region", "priority": 4 },
+        { "id": "hebergements-touristiques-la-reunion-tourinsoft", "portal": "region", "priority": 1 },
+        { "id": "restauration-lareunion-tourinsoft", "portal": "region", "priority": 1 },
+        { "id": "sortir-lareunion-tourinsoft", "portal": "region", "priority": 1 },
+        { "id": "activites-loisir-plein-air-lareunion-tourinsoft", "portal": "region", "priority": 1 },
+        { "id": "lieux-remarquables-lareunion-tourinsoft", "portal": "region", "priority": 1 },
+        { "id": "info-services-touristiques-lareunion-tourinsoft", "portal": "region", "priority": 2 },
+        { "id": "frequentation-touristique-mensuelle-a-la-reunion-depuis-2017", "portal": "region", "priority": 1 },
+        { "id": "localisation-potentielle-ecolodge-lareunion", "portal": "region", "priority": 3 },
+        { "id": "hebergements-classespublic", "portal": "region", "priority": 2 },
+        { "id": "hebergement-collectif-de-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "aires-helicopteres-lareunion", "portal": "region", "priority": 4 },
+        { "id": "plan-de-relance-projets-soutenus-par-le-ministere-de-la-culture-a-la-reunion", "portal": "region", "priority": 4 },
+        { "id": "aides-audiovisuelles-lareunion", "portal": "region", "priority": 4 },
+        { "id": "aides-audiovisuelles-2020", "portal": "region", "priority": 4 },
+        { "id": "aides-audiovisuelles-2021-copie", "portal": "region", "priority": 4 },
+        { "id": "aides-audiovisuelles-2022", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "education": {
+      "label": "Éducation & formation",
+      "icon": "🎓",
+      "datasets": [
+        { "id": "liste-des-etablissements-scolaires-du-territoire-de-louest-copie", "portal": "tco", "priority": 2 },
+        { "id": "liste-des-etablissements-scolaires-du-territoire-de-la-cote-ouest", "portal": "tco", "priority": 1 },
+        { "id": "adresse-et-geolocalisation-des-etablissements-d-enseignement-du-premier-et-secon", "portal": "tco", "priority": 2 },
+        { "id": "lieux-de-mediation-numeriques-au-tco", "portal": "tco", "priority": 2 },
+        { "id": "offre-formation-college-lareunion", "portal": "region", "priority": 2 },
+        { "id": "offre-formation-lycee-lareunion", "portal": "region", "priority": 2 },
+        { "id": "offre-formation-postbac-lareunion", "portal": "region", "priority": 2 },
+        { "id": "moncompteformation-l-offre-de-formation-a-la-reunion", "portal": "region", "priority": 1 },
+        { "id": "parcoursup-2023-voeux-de-poursuite-d-etudes-et-de-reorientation-dans-l-enseignem", "portal": "region", "priority": 3 },
+        { "id": "parcoursup-2022-voeux-de-poursuite-d-etudes-et-de-reorientation", "portal": "region", "priority": 3 },
+        { "id": "cartographie-des-formations-parcoursup-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "inserjeunes-voie-professionnelle-scolaire-par-lycee-d-enseignement-professionnel", "portal": "region", "priority": 2 },
+        { "id": "indices-de-position-sociale-dans-les-lycees-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "indices-de-position-sociale-dans-les-colleges-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "indices-de-position-sociale-dans-les-ecoles-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "etablissements-de-l-education-prioritaire-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "etablissements-labellises-generation-2024-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "annuaire-de-l-education", "portal": "region", "priority": 3 },
+        { "id": "fr-en-annuaire-educationdataeducation", "portal": "region", "priority": 3 },
+        { "id": "region-liste-des-organismes-de-formation-et-des-cfa", "portal": "region", "priority": 2 },
+        { "id": "ideo-fiches-metiers", "portal": "region", "priority": 3 },
+        { "id": "ideo-fiches-formations", "portal": "region", "priority": 3 },
+        { "id": "ideo-structures-denseignement-superieur", "portal": "region", "priority": 3 },
+        { "id": "ideo-structures-denseignement-secondaire", "portal": "region", "priority": 3 },
+        { "id": "lieux-de-mediation-numeriques", "portal": "region", "priority": 3 },
+        { "id": "attractivite-dans-la-voie-professionnelle-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "le-mode-d-hebergement-des-eleves-dans-les-etablissements-du-second-degre-a-la-re", "portal": "region", "priority": 3 },
+        { "id": "les-structures-de-retour-a-l-ecole-a-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "effectifs-d-eleves-par-niveau-sexe-langues-vivantes-1-et-2-les-plus-frequentes-p", "portal": "region", "priority": 4 },
+        { "id": "effectifs-d-etudiants-inscrits-dans-les-etablissements-publics-sous-tutelle-du-m", "portal": "region", "priority": 4 },
+        { "id": "statistiques-sur-les-effectifs-d-etudiants-inscrits-par-ecole-et-institut-nation", "portal": "region", "priority": 4 },
+        { "id": "statistiques-sur-les-effectifs-d-etudiants-inscrits-par-etablissement-public-sou", "portal": "region", "priority": 4 },
+        { "id": "fr-esr-taux-poursuite-enseignement-superieur-par-academie", "portal": "region", "priority": 4 },
+        { "id": "fr-esr-etablissements-publics-prives-impliques-recherche-developpementmesr", "portal": "region", "priority": 4 },
+        { "id": "principaux-diplomes-et-formations-prepares-dans-les-etablissements-publics-sous-", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "gouvernance": {
+      "label": "Gouvernance & administration",
+      "icon": "🏛️",
+      "datasets": [
+        { "id": "les-elu-e-s-communautaires-du-tco", "portal": "tco", "priority": 1 },
+        { "id": "publicite-des-actes-to", "portal": "tco", "priority": 1 },
+        { "id": "deliberations-conseil-2021-et-2022", "portal": "tco", "priority": 2 },
+        { "id": "appel-a-projet-du-territoire-de-la-cote-ouest", "portal": "tco", "priority": 3 },
+        { "id": "bureaux-de-vote", "portal": "tco", "priority": 3 },
+        { "id": "liste-de-l-ensemble-des-elus-locaux", "portal": "region", "priority": 2 },
+        { "id": "liste-des-conseillers-communautaires", "portal": "region", "priority": 2 },
+        { "id": "liste-des-elus-municpaux-de-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "liste_maire_974", "portal": "region", "priority": 3 },
+        { "id": "donnees-du-repertoire-national-des-elus-locaux-municipaux-communautaires-epci-de", "portal": "region", "priority": 2 },
+        { "id": "resultats-des-elections-legislatives-2022-1er-tour-par-bureau-de-vote-a-la-reuni", "portal": "region", "priority": 2 },
+        { "id": "resultats-des-elections-legislatives-2022-2nd-tour-par-bureau-de-vote-a-la-reuni", "portal": "region", "priority": 2 },
+        { "id": "resultats-des-elections-presidentielles-2022-1er-tour-par-bureau-de-vote-a-la-re", "portal": "region", "priority": 2 },
+        { "id": "bureaux-de-vote-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "secteurs-vote-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "annuaire-de-l-administration-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 2 },
+        { "id": "annuaire-de-ladministration-base-de-donnees-localespublic", "portal": "region", "priority": 3 },
+        { "id": "competence-territoriale-gendarmerie-et-police-nationale", "portal": "region", "priority": 3 },
+        { "id": "deliberation-de-la-ville-de-la-possession-18-juillet-2026", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-06-juin-2026", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mars-2026", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-25-avril-2026", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-04-26", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-02-26", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-octobre-2025", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-aout-2025", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-juin-2025", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mai-2025", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mars-2025", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-fevrier-2025", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-novembre-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-octobre-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-aout-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-juin-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mai-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mars-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-fevrier-2024", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-janvier-2022", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-12-25", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-12-23", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-12-22", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-10-23", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-09-23", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-09-22", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-06-22", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-05-22", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-03-23", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-03-22", "portal": "region", "priority": 4 },
+        { "id": "deliberation-possession-02-23", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mars-20240", "portal": "region", "priority": 4 },
+        { "id": "deliberation-de-la-ville-de-la-possession-mars-2024", "portal": "region", "priority": 4 },
+        { "id": "decision-modificative-2024-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "decision-modificative-de-la-ville-de-la-possession-2025", "portal": "region", "priority": 4 },
+        { "id": "decision-modificative-2022", "portal": "region", "priority": 4 },
+        { "id": "decision-modificative-2021-mairie-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "compte-administratif-2024-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "compte-administratif-2023-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "compte-administratif-2021-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "compte-financier-unique-2025-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "budget-primitif-2026-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "budget-primitif-2025-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "budget-primitif-2024-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "budget-primitif-2023", "portal": "region", "priority": 4 },
+        { "id": "budget-primitif-2022", "portal": "region", "priority": 4 },
+        { "id": "budget-supplementaire-2024-de-la-ville-de-la-possession", "portal": "region", "priority": 4 },
+        { "id": "budget-supplementaire-2022", "portal": "region", "priority": 4 },
+        { "id": "repertoire-national-des-associations-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 2 },
+        { "id": "repertoire-local-des-associations-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "base-naissance-tco", "portal": "tco", "priority": 3 },
+        { "id": "liste-des-personnes-decedees-en-france-collectees-depuis-1970-ca-territoire-de-l", "portal": "tco", "priority": 4 },
+        { "id": "liste-des-personnes-decedees-en-france-collectees-depuis-1970", "portal": "region", "priority": 4 },
+        { "id": "soldats-morts-pour-la-france", "portal": "region", "priority": 4 },
+        { "id": "prenomsdpt974depuis2000", "portal": "region", "priority": 4 },
+        { "id": "population-francaise-communespublic", "portal": "region", "priority": 3 },
+        { "id": "intercommunalites-millesime-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 3 },
+        { "id": "intercommunalites-millesime-france", "portal": "region", "priority": 3 },
+        { "id": "communes-millesime-france", "portal": "region", "priority": 3 },
+        { "id": "cantons-millesime-france", "portal": "region", "priority": 3 },
+        { "id": "iris-millesime-france", "portal": "region", "priority": 3 }
+      ]
+    },
+
+    "numerique": {
+      "label": "Numérique & télécoms",
+      "icon": "📡",
+      "datasets": [
+        { "id": "deploiement-du-haut-et-tres-haut-debit-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "sites-mobiles-5g-sur-le-territoire-de-la-cote-ouest", "portal": "tco", "priority": 1 },
+        { "id": "sites-mobiles-5g-a-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "deploiement-du-haut-et-tres-haut-debit-commune-millesime-france", "portal": "region", "priority": 2 },
+        { "id": "arcep_departement", "portal": "region", "priority": 3 },
+        { "id": "arcep_regions", "portal": "region", "priority": 3 },
+        { "id": "activateurs-france-num-de-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "cheque-numerique-2020-copie", "portal": "region", "priority": 4 },
+        { "id": "cheque-numerique-2021-2023-copie", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "equipements": {
+      "label": "Équipements publics",
+      "icon": "🏢",
+      "datasets": [
+        { "id": "base-permanente-des-equipements-ensemble-ca-territoire-de-la-cote-ouest-tco", "portal": "tco", "priority": 1 },
+        { "id": "etablissements-publics-et-prives-de-la-possession", "portal": "tco", "priority": 3 },
+        { "id": "base-permanente-des-equipements-geolocalisee-la-reunion", "portal": "region", "priority": 2 },
+        { "id": "base-permanente-des-plu-de-la-reunion", "portal": "region", "priority": 3 },
+        { "id": "places-stationnement-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "mairies-annexes-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "panneaux-affichage-libre-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "monuments-historiques-villesaintdenis", "portal": "region", "priority": 4 },
+        { "id": "les-20-quartiers-villesaintdenis", "portal": "region", "priority": 4 }
+      ]
+    },
+
+    "agriculture": {
+      "label": "Agriculture & filières",
+      "icon": "🌾",
+      "datasets": [
+        { "id": "balances-canne-a-sucre-lareunion", "portal": "region", "priority": 2 },
+        { "id": "bp_012020_lareunion", "portal": "region", "priority": 4 },
+        { "id": "af_financees_cr", "portal": "region", "priority": 4 },
+        { "id": "chiffres_cles", "portal": "region", "priority": 4 },
+        { "id": "etudes", "portal": "region", "priority": 4 }
+      ]
+    }
+
+  }
+}
