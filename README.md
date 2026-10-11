@@ -1,3 +1,4 @@
+<div align="center">
 # 🇷🇪 TCO Monitor
 
 **Tableau de bord expert du Territoire de la Côte Ouest — La Réunion**
@@ -14,7 +15,7 @@
 **🚀 [Voir le dashboard en ligne](https://gunout.github.io/tco-monitor/)**
 
 [data.tco.re](https://data.tco.re) · [data.regionreunion.com](https://data.regionreunion.com)
-
+</div>
 ---
 
 ## 🎯 Présentation
